@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAIPORE Xpress – Authentic Indian Eatery in Ridgefield, CT</title>
+    <meta name="description" content="Experience authentic Indian cuisine at JAIPORE Xpress in Ridgefield, CT. We offer a wide range of curries, tandoori specialties, and more for takeout. Order online today!">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="JAIPORE Xpress – Authentic Indian Eatery in Ridgefield, CT">
+    <meta property="og:description" content="Experience authentic Indian cuisine at JAIPORE Xpress in Ridgefield, CT. We offer a wide range of curries, tandoori specialties, and more for takeout. Order online today!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jaiporexpress.com/images/logo.png">
+    <meta property="og:url" content="http://www.jaiporexpress.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://jaiporexpress.com/images/logo.png">
+    <link rel="shortcut icon" href="https://jaiporexpress.com/images/logo.png">
+    <link rel="apple-touch-icon" href="https://jaiporexpress.com/images/logo.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://www.jaiporexpress.com/">
+
+    <!-- Hero image preload -->
+    <link rel="preload" as="image" href="https://jaiporexpress.com/images/gallery/1.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "JAIPORE Xpress",
+      "description": "The To-Go Indian seeks to tempt the taste buds of CT by offering a full take on Indian food with a nod to the authentic culture and vibe of India.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "19 Bailey Ave",
+        "addressLocality": "Ridgefield",
+        "addressRegion": "CT",
+        "postalCode": "06877",
+        "addressCountry": "USA"
+      },
+      "telephone": "+1-203-403-3997",
+      "openingHours": ["Mo-Su 11:30-20:30"],
+      "image": "https://jaiporexpress.com/images/logo.png",
+      "servesCuisine": "Indian",
+      "priceRange": "$$",
+      "url": "http://www.jaiporexpress.com/"
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E6007E',
+                        'primary-dark': '#c4006b',
+                    },
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
+                        serif: ['Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://jaiporexpress.com/images/gallery/1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Kora Site Config -->
+    <script>
+        window.KORA_SITE_CONFIG = {
+            apiBaseUrl: "", // This would be provided by the backend
+            businessId: "0734f804-653f-423b-b862-1f7a113f0856",
+            recaptchaSiteKey: "" // This would be provided by the backend
+        };
+    </script>
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="https://jaiporexpress.com/images/logo.png" alt="JAIPORE Xpress Logo" class="h-12 w-auto">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-primary transition">Gallery</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="https://www.toasttab.com/jaiporexpress" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-5 py-2.5 rounded-md font-semibold hover:bg-primary-dark transition shadow-sm">
+                        Order Online
+                    </a>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block text-gray-600 hover:text-primary transition py-2">About</a>
+            <a href="#gallery" class="block text-gray-600 hover:text-primary transition py-2">Gallery</a>
+            <a href="#contact" class="block text-gray-600 hover:text-primary transition py-2">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 h-[80vh] min-h-[500px] flex flex-col justify-center items-center text-center">
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight drop-shadow-lg">Authentic Indian Eatery</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl drop-shadow-md">The To-Go Indian tempting the taste buds of Connecticut with authentic flavors and vibrant culture.</p>
+                <div class="mt-8">
+                    <a href="https://www.toasttab.com/jaiporexpress" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-primary-dark transition shadow-lg">
+                        Order Takeout Now
+                    </a>
+                </div>
+                <div class="mt-10 bg-black bg-opacity-50 p-4 rounded-lg">
+                    <h2 class="text-xl font-semibold">COMING SOON!</h2>
+                    <p class="mt-2">Two New Locations: New Fairfield, CT & Brookfield, CT</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">A Taste of India in Connecticut</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">JAIPORE Xpress seeks to tempt your taste buds by offering a full take on Indian food with a nod to the authentic culture and vibe of India. We offer a wide range of traditional dishes including various curries, tandoori specialties, biryanis, and a selection of vegetarian and vegan options.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Our Culinary Creations</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="https://jaiporexpress.com/images/gallery/2.jpg" alt="Indian dish 1" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300" loading="lazy" onclick="openModal('https://jaiporexpress.com/images/gallery/2.jpg', 'Indian dish 1')">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="https://jaiporexpress.com/images/gallery/3.jpg" alt="Indian dish 2" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300" loading="lazy" onclick="openModal('https://jaiporexpress.com/images/gallery/3.jpg', 'Indian dish 2')">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="https://jaiporexpress.com/images/gallery/4.jpg" alt="Indian dish 3" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300" loading="lazy" onclick="openModal('https://jaiporexpress.com/images/gallery/4.jpg', 'Indian dish 3')">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="https://jaiporexpress.com/images/gallery/5.jpg" alt="Indian dish 4" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300" loading="lazy" onclick="openModal('https://jaiporexpress.com/images/gallery/5.jpg', 'Indian dish 4')">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="https://jaiporexpress.com/images/gallery/6.jpg" alt="Indian dish 5" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300" loading="lazy" onclick="openModal('https://jaiporexpress.com/images/gallery/6.jpg', 'Indian dish 5')">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="https://jaiporexpress.com/images/gallery/7.jpg" alt="Indian dish 6" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300" loading="lazy" onclick="openModal('https://jaiporexpress.com/images/gallery/7.jpg', 'Indian dish 6')">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="https://jaiporexpress.com/images/gallery/8.jpg" alt="Indian dish 7" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300" loading="lazy" onclick="openModal('https://jaiporexpress.com/images/gallery/8.jpg', 'Indian dish 7')">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <img src="https://jaiporexpress.com/images/gallery/9.jpg" alt="Indian dish 8" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300" loading="lazy" onclick="openModal('https://jaiporexpress.com/images/gallery/9.jpg', 'Indian dish 8')">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Location Section -->
+        <section id="contact" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Visit Us or Get in Touch</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Info & Hours -->
+                    <div>
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                            <h3 class="text-2xl font-semibold mb-6">Our Location</h3>
+                            <div class="space-y-4 text-lg">
+                                <p class="flex items-start">
+                                    <i data-lucide="map-pin" class="w-6 h-6 mr-3 mt-1 text-primary"></i>
+                                    <span>19 Bailey Ave, Ridgefield, CT 06877</span>
+                                </p>
+                                <p class="flex items-center">
+                                    <i data-lucide="phone" class="w-6 h-6 mr-3 text-primary"></i>
+                                    <a href="tel:+1-203-403-3997" class="hover:text-primary">(203) 403-3997</a>
+                                </p>
+                                <p class="flex items-center">
+                                    <i data-lucide="mail" class="w-6 h-6 mr-3 text-primary"></i>
+                                    <a href="mailto:info@jaiporect.com" class="hover:text-primary">info@jaiporect.com</a>
+                                </p>
+                            </div>
+
+                            <h3 class="text-2xl font-semibold mt-10 mb-6">Hours</h3>
+                            <div class="space-y-2 text-lg">
+                                <div class="flex justify-between">
+                                    <span>Monday - Sunday</span>
+                                    <span>11:30 AM - 8:30 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 h-80 md:h-96 rounded-lg overflow-hidden shadow-md">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.425128809102!2d-73.4996257845824!3d41.28183397927408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7f76000000001%3A0xd09b7c859d3fd3e2!2sJAIPORE%20Xpress!5e0!3m2!1sen!2sus!4v1684321098765"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div>
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                            <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+                            <form id="contact-form" novalidate>
+                                <div class="space-y-6">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                        <input type="text" name="name" id="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                        <input type="email" name="email" id="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
+                                    </div>
+                                    <div>
+                                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"></textarea>
+                                    </div>
+                                    <div class="g-recaptcha" data-sitekey=""></div>
+                                    <div>
+                                        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-dark transition shadow-sm">
+                                            Submit
+                                        </button>
+                                    </div>
+                                    <p id="form-message" class="text-center"></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <img src="https://jaiporexpress.com/images/logo.png" alt="JAIPORE Xpress Logo" class="h-14 w-auto mx-auto md:mx-0">
+                    <p class="mt-4 max-w-xs">19 Bailey Ave, Ridgefield, CT 06877</p>
+                    <p><a href="tel:+1-203-403-3997" class="hover:text-primary">(203) 403-3997</a></p>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.instagram.com/jaiporexpress/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">
+                        <i data-lucide="instagram" class="w-7 h-7"></i>
+                    </a>
+                    <a href="https://www.facebook.com/jaiporexpress/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">
+                        <i data-lucide="facebook" class="w-7 h-7"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; <span id="year"></span> JAIPORE Xpress. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 hidden p-4">
+        <div class="relative bg-white p-2 rounded-lg max-w-4xl max-h-[90vh]">
+            <button onclick="closeModal()" class="absolute -top-4 -right-4 text-white bg-primary rounded-full p-2 z-10">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <img id="modal-img" src="" alt="" class="object-contain max-w-full max-h-[85vh] rounded">
+        </div>
+    </div>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Page Scripts -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Gallery Modal
+        const modal = document.getElementById('gallery-modal');
+        const modalImg = document.getElementById('modal-img');
+        function openModal(src, alt) {
+            modalImg.src = src;
+            modalImg.alt = alt;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var form = e.target;
+            var name = form.elements.name.value.trim();
+            var email = form.elements.email.value.trim();
+            var message = form.elements.message.value.trim();
+            var msgEl = document.getElementById('form-message');
+
+            function showMsg(text, isError) {
+                msgEl.textContent = text;
+                msgEl.style.color = isError ? '#f87171' : '#4ade80';
+            }
+
+            if (!name || !email || !message) {
+                showMsg('Please fill out all fields.', true);
+                return;
+            }
+            
+            if (!/^\S+@\S+\.\S+$/.test(email)) {
+                showMsg('Please enter a valid email address.', true);
+                return;
+            }
+
+            var cfg = window.KORA_SITE_CONFIG || {};
+            var apiBaseUrl = (cfg.apiBaseUrl || '').replace(/\/+$/, '');
+            var businessId = cfg.businessId;
+            var recaptchaSiteKey = cfg.recaptchaSiteKey;
+
+            if (!apiBaseUrl || !businessId || !recaptchaSiteKey) {
+                showMsg('Form is temporarily unavailable. Please try again later.', true);
+                return;
+            }
+            
+            var token = grecaptcha.getResponse();
+            if (!token) {
+                showMsg('Please complete the reCAPTCHA.', true);
+                return;
+            }
+
+            showMsg('Sending...', false);
+
+            fetch(apiBaseUrl + '/api/v1/public/forms/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    business_id: businessId,
+                    form_type: 'contact',
+                    form_data: { name: name, email: email, message: message },
+                    submitter_email: email,
+                    captcha_token: token
+                })
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok.');
+            })
+            .then(function(data) {
+                showMsg('Thank you! Your message has been sent.', false);
+                form.reset();
+                grecaptcha.reset();
+            })
+            .catch(function(error) {
+                showMsg('Something went wrong. Please try again.', true);
+            });
+        });
+    </script>
+</body>
+</html>
